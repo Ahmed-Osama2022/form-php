@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <title>Form Validation Test</title>
+</head>
+
+<style>
+    body {
+        background-color: #232323;
+        color: #f3f3f3;
+        min-height: 75vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .disabled-form {
+        border: 1px solid #fc0000 !important;
+    }
+
+    input {
+        background-color: #565656 !important;
+        color: #e7e7e7 !important;
+        box-shadow: none !important;
+    }
+</style>
+
+<body>
+    <div class="container mt-5 m-auto">
+        <div class="row justify-content-center align-items-center my-5">
+            <div class="col-md-6 col-10">
+                <div class="text-center text-md-start pt-3">
+                    <h1 class="fw-bold">Log in</h1>
+                    <p class="lead">Hello again, please login to you account</p>
+                </div>
+                <!-- FORM -->
+                <form method="post" action="login.php">
+                    <div class="mb-3">
+                        <label for="Username" class="form-label">Username</label>
+                        <input type="text" name="username" class="form-control" id="username"
+                            aria-describedby="emailHelp">
+
+                        <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" name="password" class="form-control" id="password">
+                    </div>
+                    <button type="submit" id="submit" name="submit" class="btn btn-primary">Submit</button>
+                </form>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- JS -->
+    <script src="./main.js"></script>
+    <script src="./js/all.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js.map"></script>
+</body>
+
+</html>
